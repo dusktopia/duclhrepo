@@ -2,6 +2,7 @@ import serial
 import time
 
 # * COM Port configuration
+# * Modify in server
 
 vserial = serial.Serial(port='COM10',
                         baudrate=9600,
