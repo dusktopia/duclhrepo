@@ -1,5 +1,24 @@
 import serial
 import time
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+import pandas as pd
+import itertools
+import csv
+
+idx = itertools.count()
+raw_data = 'raw_data.csv'
+
+def write_raw_data():
+    with open(raw_data, 'w') as csv_file:
+        csv_writer = csv.DictWriter(csv_file, fieldnames=['time_ms', 'value'])
+        csv_writer.writeheader()
+
+def read_raw_data():
+    pass
+
+def real_time_plotting(i):
+    pass
 
 # * COM Port configuration
 # * Modify in server
